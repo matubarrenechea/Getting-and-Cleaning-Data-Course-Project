@@ -15,4 +15,4 @@ For each record in the dataset it is provided:
 
 
 ### Exercise 1.
-##Merge the training and the test sets to create one data set.
+####Merge the training and the test sets to create one data set.
