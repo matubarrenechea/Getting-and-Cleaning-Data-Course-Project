@@ -25,4 +25,6 @@ Once you have downloaded this file and unziped it you can run the_analysis.R fil
 - Appropriately labels the data set with descriptive variable names. 
 - From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-The CodeBook.md has the explanation of variables, data and any transformations or work that the sdript makes to clean up the data (also in the script there are comments of th data manipulation)
+The CodeBook.md has the explanation of variables, data and any transformations or work that the sdript makes to clean up the data (also in the script there are comments of th data manipulation).
+
+The tidyData.txt has the Tidy Data that the script generates.
