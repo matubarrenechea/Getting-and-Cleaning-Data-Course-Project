@@ -15,7 +15,7 @@ For each record in the dataset it is provided:
 
 
 ### Exercise 1.
-####Merge the training and the test sets to create one data set.
+#### Merge the training and the test sets to create one data set.
 
 First of all, seting the working directory.
 
@@ -28,3 +28,35 @@ After seting the working directory, read the data:
 - x_test.txt
 - y_test.txt
 - subject_test.txt
+
+Then rename the columns of the Training sets and de Test sets.
+
+After this, merge each group of 3 data sets, and after that merge this two data sets.
+
+
+### Exercise 2.
+#### Extracts only the measurements on the mean and standard deviation for each measurement.
+
+Generate a vector with the position of the Id, mean and the standard deviation of the columns names.
+
+Then, select from the data set only the columns from this vector.
+
+
+### Exercise 3.
+#### Uses descriptive activity names to name the activities in the data set.
+
+Merge data set of the exercise 2  with the activity_abels table to add the description of the activity.
+
+
+### Exercise 4.
+#### Appropriately labels the data set with descriptive variable names.
+
+Use the "gsub" function for replace and make appropiate the data set.
+
+
+### Exercise 5.
+#### From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+From the last data set is created a new and final data set, with the average of each variable for each activity and each subject.
+
+Then this Final Data Set is generated in a .txt extension
