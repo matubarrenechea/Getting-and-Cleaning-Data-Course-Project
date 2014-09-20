@@ -17,7 +17,7 @@ Here are the data for the project:
 
 Once you have downloaded this file and unziped it you can run the_analysis.R fil from this repo, be careful of the setwd() function for seting the working directory, may be you have to change it for your convenience.
 
-This are the Course Project Instructions:
+####This are the Course Project Instructions:
 1)Merges the training and the test sets to create one data set.
 2)Extracts only the measurements on the mean and standard deviation for each measurement. 
 3)Uses descriptive activity names to name the activities in the data set
