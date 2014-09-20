@@ -11,7 +11,7 @@
 
 
 #   First of all, set working directory
-setwd("~/FACULTAD/CURSOS/Getting and Cleaning Data (Coursera)/Course Project/UCI HAR Dataset")
+setwd("./UCI HAR Dataset")
 
 
 #   Read data
