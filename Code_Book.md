@@ -16,3 +16,15 @@ For each record in the dataset it is provided:
 
 ### Exercise 1.
 ####Merge the training and the test sets to create one data set.
+
+First of all, seting the working directory.
+
+After seting the working directory, read the data:
+- features.txt
+- activity_labels.txt
+- x_train.txt
+- y_train.txt
+- subject_train.txt
+- x_test.txt
+- y_test.txt
+- subject_test.txt
