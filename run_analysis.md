@@ -1,13 +1,10 @@
-################################################
-########            Coursera            ########
-########    Getting and Cleaning Data   ########
-########        Course Project          ########
-################################################
 
+Getting-and-Cleaning-Data-Course-Project
+========================================
 
-####    Exercise 1
+##    Exercise 1
 
-##  Merges the training and the test sets to create one data set.
+###  Merges the training and the test sets to create one data set.
 
 
 #   First of all, set working directory
@@ -52,9 +49,9 @@ Complete_Data_1 <- rbind(Data_Train, Data_Test)
 
 
 
-####    Exercise 2
+##    Exercise 2
 
-##  Extracts only the measurements on the mean and standard deviation for each measurement.
+###  Extracts only the measurements on the mean and standard deviation for each measurement.
 
 
 # With the grepl function, generate a vector with the position of the means and the standard deviations
@@ -69,18 +66,18 @@ Complete_Data_2 <- Complete_Data_1[,positions]
 
 
 
-####    Exercise 3
+##    Exercise 3
 
-## Uses descriptive activity names to name the activities in the data set
+### Uses descriptive activity names to name the activities in the data set
 
 # Merge "Complete_Data2" whith "activity_labels" that has the activities names
 Complete_Data_3 <- merge(Complete_Data_2, activity_labels, by = "activity_Id", all.x = TRUE)
 
 
 
-####    Exercise 4
+##    Exercise 4
 
-## Appropriately labels the data set with descriptive variable names. 
+### Appropriately labels the data set with descriptive variable names. 
 
 columns_3 <- colnames(Complete_Data_3)
 
@@ -99,9 +96,9 @@ colnames(Complete_Data_3) = columns_3
 
 
 
-####    Exercise 5
+##    Exercise 5
 
-## From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+### From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
 
 Tidy_Data_1 <- aggregate(Complete_Data_3[, columns_3 != c("activity_Id", "subject_Id", "activity_Type")], by = list(activity_Id = Complete_Data_3$activity_Id, subject_Id = Complete_Data_3$subject_Id), mean)
